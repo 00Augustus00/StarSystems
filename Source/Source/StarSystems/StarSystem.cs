@@ -27,7 +27,8 @@ namespace StarSystems
             "Duna",
             "Dres",
             "Jool",
-            "Eeloo"
+            "Sima",
+            "Marune"
         };
 
         private ConfigNode StarNames;
@@ -72,7 +73,7 @@ namespace StarSystems
                     Kerbol.ScienceMultiplier = 1f;
                     Kerbol.OrignalStar = true;
                     Kerbol.BodyDescription =
-                        "The Sun is the most well known object in the daytime sky. Scientists have noted a particular burning sensation and potential loss of vision if it is stared at for long periods of time. This is especially important to keep in mind considering the effect shiny objects have on the average Kerbal.";
+                        "Kerbol is the most well known object in the daytime sky. Scientists have noted a particular burning sensation and potential loss of vision if it is stared at for long periods of time. This is especially important to keep in mind considering the effect shiny objects have on the average Kerbal.";
                     kspSystemDefinition.Stars.Add(Kerbol);
                     Debug.Log("Ksp Solar System Defintions loaded");
                 }
