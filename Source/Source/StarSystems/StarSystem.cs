@@ -27,8 +27,7 @@ namespace StarSystems
             "Duna",
             "Dres",
             "Jool",
-            "Sima",
-            "Marune"
+            "Eeloo"
         };
 
         private ConfigNode StarNames;
