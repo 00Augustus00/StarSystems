@@ -67,7 +67,7 @@ namespace StarSystems
                     Kerbol.Epoch = 0;
                     Kerbol.Mass = 1.7565670E28;
                     Kerbol.Radius = 261600000d;
-                    Kerbol.FlightGlobalsIndex = 200;
+                    Kerbol.FlightGlobalsIndex = 50;
                     Kerbol.StarColor = PlanetColor.Yellow;
                     Kerbol.ScienceMultiplier = 1f;
                     Kerbol.OrignalStar = true;
