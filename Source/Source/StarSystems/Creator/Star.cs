@@ -124,6 +124,58 @@ namespace StarSystems.Creator
                             GameDatabase.Instance.GetTexture("StarSystems/Resources/RedStarCorona", false);
                     }
                     break;
+                    case PlanetColor.Orange:
+
+                    ScaledStar.renderer.material.SetColor("_EmitColor0", new Color(0.861f, 0.704f, 0.194f, 1));
+                    ScaledStar.renderer.material.SetColor("_EmitColor1", new Color(0.398f, 0.071f, 1.0f, 1));
+                    ScaledStar.renderer.material.SetColor("_SunspotColor", new Color(0.01f, 0.003f, 0.007f, 1));
+                    ScaledStar.renderer.material.SetColor("_RimColor", new Color(0.626f, 0.231f, 0.170f, 1.0f));
+
+                    foreach (var StarCorona in ScaledStar.GetComponentsInChildren<SunCoronas>())
+                    {
+                        StarCorona.renderer.material.mainTexture =
+                            GameDatabase.Instance.GetTexture("StarSystems/Resources/OrangeStarCorona", false);
+                    }
+                    break;
+                    case PlanetColor.White:
+
+                    ScaledStar.renderer.material.SetColor("_EmitColor0", new Color(1.0f, 1.0f, 1.0f, 1));
+                    ScaledStar.renderer.material.SetColor("_EmitColor1", new Color(1.0f, 1.0f, 1.0f, 1));
+                    ScaledStar.renderer.material.SetColor("_SunspotColor", new Color(0.01f, 0.003f, 0.007f, 1));
+                    ScaledStar.renderer.material.SetColor("_RimColor", new Color(1.0f, 1.0f, 1.0f, 1.0f));
+
+                    foreach (var StarCorona in ScaledStar.GetComponentsInChildren<SunCoronas>())
+                    {
+                        StarCorona.renderer.material.mainTexture =
+                            GameDatabase.Instance.GetTexture("StarSystems/Resources/WhiteStarCorona", false);
+                    }
+                    break;
+                    case PlanetColor.RedBrown:
+
+                    ScaledStar.renderer.material.SetColor("_EmitColor0", new Color(0.861f, 0.704f, 0.194f, 1));
+                    ScaledStar.renderer.material.SetColor("_EmitColor1", new Color(0.398f, 0.071f, 1.0f, 1));
+                    ScaledStar.renderer.material.SetColor("_SunspotColor", new Color(0.01f, 0.003f, 0.007f, 1));
+                    ScaledStar.renderer.material.SetColor("_RimColor", new Color(0.626f, 0.231f, 0.170f, 1.0f));
+
+                    foreach (var StarCorona in ScaledStar.GetComponentsInChildren<SunCoronas>())
+                    {
+                        StarCorona.renderer.material.mainTexture =
+                            GameDatabase.Instance.GetTexture("StarSystems/Resources/RedStarCorona", false);
+                    }
+                    break;
+                    case PlanetColor.Brown
+
+                    ScaledStar.renderer.material.SetColor("_EmitColor0", new Color(0.861f, 0.704f, 0.194f, 1));
+                    ScaledStar.renderer.material.SetColor("_EmitColor1", new Color(0.398f, 0.071f, 1.0f, 1));
+                    ScaledStar.renderer.material.SetColor("_SunspotColor", new Color(0.01f, 0.003f, 0.007f, 1));
+                    ScaledStar.renderer.material.SetColor("_RimColor", new Color(0.626f, 0.231f, 0.170f, 1.0f));
+
+                    foreach (var StarCorona in ScaledStar.GetComponentsInChildren<SunCoronas>())
+                    {
+                        StarCorona.renderer.material.mainTexture =
+                            GameDatabase.Instance.GetTexture("StarSystems/Resources/RedStarCorona", false);
+                    }
+                    break;
             }
 
         }
