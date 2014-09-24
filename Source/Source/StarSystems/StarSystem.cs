@@ -29,6 +29,14 @@ namespace StarSystems
             "Jool",
             "Eeloo"
         };
+        
+        public static List<string> SentarPlanets = new List<string>
+        {
+            "Ablate",
+            "Ascension",
+            "Inaccessable",
+            "Sentar"
+        };
 
         private ConfigNode StarNames;
         private KspSystemDefinition kspSystemDefinition;
