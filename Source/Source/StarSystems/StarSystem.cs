@@ -75,6 +75,7 @@ namespace StarSystems
         
         public static List<string> ZettyPlanets = new List<string>
         {
+            "Saktrun",
             "Calpamos"
         };
 
