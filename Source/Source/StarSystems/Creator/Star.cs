@@ -160,7 +160,7 @@ namespace StarSystems.Creator
                     foreach (var StarCorona in ScaledStar.GetComponentsInChildren<SunCoronas>())
                     {
                         StarCorona.renderer.material.mainTexture =
-                            GameDatabase.Instance.GetTexture("StarSystems/Resources/RedBrownStarCorona", false);
+                            GameDatabase.Instance.GetTexture("StarSystems/Resources/NoCorona", false);
                     }
                     break;
                     case PlanetColor.Brown
@@ -173,7 +173,7 @@ namespace StarSystems.Creator
                     foreach (var StarCorona in ScaledStar.GetComponentsInChildren<SunCoronas>())
                     {
                         StarCorona.renderer.material.mainTexture =
-                            GameDatabase.Instance.GetTexture("StarSystems/Resources/BrownStarCorona", false);
+                            GameDatabase.Instance.GetTexture("StarSystems/Resources/NoCorona", false);
                     }
                     break;
             }
