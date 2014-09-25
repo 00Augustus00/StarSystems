@@ -55,12 +55,6 @@ namespace StarSystems
             "Kydros"
         };
         
-        public static List<string> BillyPlanets = new List<string>
-        {
-            "Wexx",
-            "Freezer"
-        };
-        
         public static List<string> ChippoPlanets = new List<string>
         {
             "Urania"
@@ -76,6 +70,8 @@ namespace StarSystems
         public static List<string> ZettyPlanets = new List<string>
         {
             "Saktrun",
+            "Wexx",
+            "Freezer",
             "Calpamos"
         };
 
