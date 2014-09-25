@@ -45,6 +45,31 @@ namespace StarSystems
             "Boris",
             "Wot"
         };
+        
+        public static List<string> BinnyPlanets = new List<string>
+        {
+            "Verion",
+            "Folion",
+            "Clethea",
+            "Kydros"
+        };
+        
+        public static List<string> BillyPlanets = new List<string>
+        {
+            "Freezer"
+        };
+        
+        public static List<string> ChippoPlanets = new List<string>
+        {
+            "Urania"
+        };
+        
+        public static List<string> KrallPlanets = new List<string>
+        {
+            "Hercules",
+            "Titan",
+            "Hypatos"
+        };
 
         private ConfigNode StarNames;
         private KspSystemDefinition kspSystemDefinition;
