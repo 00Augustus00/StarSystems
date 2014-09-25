@@ -37,6 +37,14 @@ namespace StarSystems
             "Inaccessable",
             "Sentar"
         };
+        
+        public static List<string> CorboPlanets = new List<string>
+        {
+            "Fearless",
+            "Kaiser",
+            "Boris",
+            "Wot"
+        };
 
         private ConfigNode StarNames;
         private KspSystemDefinition kspSystemDefinition;
