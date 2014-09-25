@@ -44,7 +44,11 @@ namespace StarSystems
             "Kaiser",
             "Threshold",
             "Boris",
-            "Wot"
+            "Wot",
+            "Putto",
+            "Oorma",
+            "Arane",
+            "Flo"
         };
         
         public static List<string> BinnyPlanets = new List<string>
