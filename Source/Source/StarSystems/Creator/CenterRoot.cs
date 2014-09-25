@@ -47,10 +47,10 @@ namespace StarSystems.Creator
             OriginalSun.scienceValues.InSpaceLowDataValue = OriginalSun.scienceValues.InSpaceLowDataValue * 10f;
             OriginalSun.scienceValues.RecoveryValue = OriginalSun.scienceValues.RecoveryValue * 5f;
 
-            OriginalSun.bodyName = "Blacky Karman";
+            OriginalSun.bodyName = "Kentaurus";
 
             OriginalSun.bodyDescription =
-                "This recently discovered black hole, named after its discoverer Billy-Hadrick Kerman, is the central point where multiple star systems revolve around.";
+                "This recently discovered black hole, named after the ancient mythological Kentaur, is the central point where multiple star systems revolve around.";
 
             OriginalSun.CBUpdate();
 
