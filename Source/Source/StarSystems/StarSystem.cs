@@ -42,6 +42,7 @@ namespace StarSystems
         {
             "Fearless",
             "Kaiser",
+            "Threshold",
             "Boris",
             "Wot"
         };
@@ -50,12 +51,13 @@ namespace StarSystems
         {
             "Verion",
             "Folion",
-            "Clethea",
+            "Cleathea",
             "Kydros"
         };
         
         public static List<string> BillyPlanets = new List<string>
         {
+            "Wexx",
             "Freezer"
         };
         
