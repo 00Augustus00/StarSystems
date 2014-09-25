@@ -9,7 +9,7 @@ namespace StarSystems.Utils
 {
     class MoveSentarPlanets
     {
-        public static void MoveToKerbol()
+        public static void MoveToDolas()
         {
             Debug.Log("Moving Sentar planets to Dolas...");
             foreach (var OriginalPlanet in StarSystem.SentarPlanets)
@@ -39,7 +39,7 @@ namespace StarSystems.Utils
         {
             Debug.Log("Moving Sentar planets to Sun...");
             //Add all standard planets to Kerbol
-            foreach (var OriginalPlanet in StarSystem.StandardPlanets)
+            foreach (var OriginalPlanet in StarSystem.SentarPlanets)
             {
                 foreach (var PlanetCB in StarSystem.CBDict.Values)
                 {
@@ -54,11 +54,11 @@ namespace StarSystems.Utils
                     }
                 }
             }
-            StarSystem.CBDict["Kerbol"].CBUpdate();
+            StarSystem.CBDict["Dolas"].CBUpdate();
             StarSystem.CBDict["Sun"].CBUpdate();
 
             StarSystem.Initialized = false;
 
-            Debug.Log("Standard planets moved to Sun");
+            Debug.Log("Sentar planets moved to Sun");
         }
     }
