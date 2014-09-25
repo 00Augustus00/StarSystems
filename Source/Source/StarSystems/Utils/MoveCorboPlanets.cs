@@ -20,7 +20,7 @@ namespace StarSystems.Utils
                     {
                         PlanetCB.orbitDriver.referenceBody = StarSystem.CBDict["Corbo"];
                         StarSystem.CBDict["Sun"].orbitingBodies.Remove(PlanetCB);
-                        StarSystem.CBDict["Dolas"].orbitingBodies.Add(PlanetCB);
+                        StarSystem.CBDict["Corbo"].orbitingBodies.Add(PlanetCB);
                         PlanetCB.orbitDriver.UpdateOrbit();
 
                         break;
@@ -39,7 +39,7 @@ namespace StarSystems.Utils
         {
             Debug.Log("Moving Corbo planets to Sun...");
             //Add all standard planets to Kerbol
-            foreach (var OriginalPlanet in StarSystem.StandardPlanets)
+            foreach (var OriginalPlanet in StarSystem.CorboPlanets)
             {
                 foreach (var PlanetCB in StarSystem.CBDict.Values)
                 {
