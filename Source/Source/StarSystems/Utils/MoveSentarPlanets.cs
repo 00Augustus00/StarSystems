@@ -11,7 +11,7 @@ namespace StarSystems.Utils
     {
         public static void MoveToKerbol()
         {
-            Debug.Log("Moving Sentar planets to Kerbol...");
+            Debug.Log("Moving Sentar planets to Dolas...");
             foreach (var OriginalPlanet in StarSystem.SentarPlanets)
             {
                 foreach (var PlanetCB in StarSystem.CBDict.Values)
