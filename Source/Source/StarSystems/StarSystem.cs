@@ -72,6 +72,11 @@ namespace StarSystems
             "Titan",
             "Hypatos"
         };
+        
+        public static List<string> ZettyPlanets = new List<string>
+        {
+            "Calpamos"
+        };
 
         private ConfigNode StarNames;
         private KspSystemDefinition kspSystemDefinition;
