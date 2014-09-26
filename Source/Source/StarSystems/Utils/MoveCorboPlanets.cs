@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace StarSystems.Utils
 {
-    class MoveSentarPlanets
+    class MoveCorboPlanets
     {
         public static void MoveToCorbo()
         {
