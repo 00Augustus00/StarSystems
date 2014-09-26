@@ -7,46 +7,46 @@ using UnityEngine;
 
 namespace StarSystems.Utils
 {
-    class MoveSentarPlanets
+    class MoveChippoPlanets
     {
-        public static void MoveToCorbo()
+        public static void MoveToChippo()
         {
-            Debug.Log("Moving Corbo system to Corbo...");
-            foreach (var OriginalPlanet in StarSystem.CorboPlanets)
+            Debug.Log("Moving Urania to Chippo");
+            foreach (var OriginalPlanet in StarSystem.ChippoPlanets)
             {
                 foreach (var PlanetCB in StarSystem.CBDict.Values)
                 {
                     if (PlanetCB.name == OriginalPlanet)
                     {
-                        PlanetCB.orbitDriver.referenceBody = StarSystem.CBDict["Corbo"];
+                        PlanetCB.orbitDriver.referenceBody = StarSystem.CBDict["Chippo"];
                         StarSystem.CBDict["Sun"].orbitingBodies.Remove(PlanetCB);
-                        StarSystem.CBDict["Corbo"].orbitingBodies.Add(PlanetCB);
+                        StarSystem.CBDict["Chippo"].orbitingBodies.Add(PlanetCB);
                         PlanetCB.orbitDriver.UpdateOrbit();
 
                         break;
                     }
                 }
             }
-            StarSystem.CBDict["Corbo"].CBUpdate();
+            StarSystem.CBDict["Chippo"].CBUpdate();
             StarSystem.CBDict["Sun"].CBUpdate();
 
             StarSystem.Initialized = true;
 
-            Debug.Log("Corbo planets moved to Corbo.");
+            Debug.Log("Urania moved to Chippo");
         }
 
         public static void MoveToSun()
         {
-            Debug.Log("Moving Corbo planets to Sun...");
+            Debug.Log("Moving Urania to Sun...");
             //Add all standard planets to Kerbol
-            foreach (var OriginalPlanet in StarSystem.CorboPlanets)
+            foreach (var OriginalPlanet in StarSystem.ChippoPlanets)
             {
                 foreach (var PlanetCB in StarSystem.CBDict.Values)
                 {
                     if (PlanetCB.name == OriginalPlanet)
                     {
                         PlanetCB.orbitDriver.referenceBody = StarSystem.CBDict["Sun"];
-                        StarSystem.CBDict["Corbo"].orbitingBodies.Remove(PlanetCB);
+                        StarSystem.CBDict["Chippo"].orbitingBodies.Remove(PlanetCB);
                         StarSystem.CBDict["Sun"].orbitingBodies.Add(PlanetCB);
                         PlanetCB.orbitDriver.UpdateOrbit();
 
@@ -54,11 +54,11 @@ namespace StarSystems.Utils
                     }
                 }
             }
-            StarSystem.CBDict["Corbo"].CBUpdate();
+            StarSystem.CBDict["Chippo"].CBUpdate();
             StarSystem.CBDict["Sun"].CBUpdate();
 
             StarSystem.Initialized = false;
 
-            Debug.Log("Corbo planets moved to Sun");
+            Debug.Log("Urania moved to Sun");
         }
     }
