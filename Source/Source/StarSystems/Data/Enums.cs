@@ -21,6 +21,14 @@ namespace StarSystems.Data
         Red,
         [EnumDescription("Yellow")]
         Yellow
+        [EnumDescriptionAttribute("RedBrown")]
+        RedBrown,
+        [EnumDescriptionAttribute("White")]
+        White,
+        [EnumDescriptionAttribute("Brown")]
+        Brown,
+        [EnumDescriptionAttribute("Orange")]
+        Orange,
     }
 
 }
